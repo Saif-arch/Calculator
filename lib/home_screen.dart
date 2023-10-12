@@ -232,7 +232,11 @@ class _HomeScreenState extends State<HomeScreen> {
         History =
             firstNum.toString() + operator.toString() + secondNum.toString();
       }
-      if (operator == '%') {}
+      if (operator == '%') {
+        res = (firstNum * secondNum/100).toString();
+        History =
+            firstNum.toString() + operator.toString() + secondNum.toString();
+      }
     } else {
       res = int.parse(textDisplay + btnVal).toString();
     }
